@@ -7,8 +7,10 @@ import * as serviceWorker from './serviceWorker';
 import Bomb from './state-drills/Bomb';
 import RouletteGun from './state-drills/RouletteGun';
 import Accordian from './accordian-drill/Accordian';
+import { sections } from './store';
 
-ReactDOM.render(<Accordian />, document.getElementById('root'));
+
+ReactDOM.render(<Accordian sections={sections} />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
